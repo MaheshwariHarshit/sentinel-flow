@@ -1,0 +1,14 @@
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+langchain>=0.2.0
+langchain-openai>=0.1.0
+langchain-anthropic>=0.1.0
+langgraph>=0.0.60
+pydantic>=2.7.0
+redis>=5.0.0
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.9
+pinecone>=4.0.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.1

@@ -1,0 +1,22 @@
+system:
+  max_iterations: 5
+  model: 'gpt-4o' # or claude-3-5-sonnet
+  temperature: 0.2
+  log_level: 'INFO'
+
+integrations:
+  splunk:
+    index: 'main'
+    enabled: true
+  pinecone:
+    index_name: 'sentinel-flow-memory'
+    enabled: true
+  github:
+    enabled: true
+  slack:
+    enabled: true
+    channel: '#incidents'
+
+database:
+  postgres_uri: 'postgresql://sentinel:password@db:5432/sentinel_db'
+  redis_uri: 'redis://redis:6379/0'
